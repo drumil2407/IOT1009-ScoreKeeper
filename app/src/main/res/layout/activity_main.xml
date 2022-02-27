@@ -19,26 +19,28 @@
 
         <!--Button to decrease score -->
 
+        <!--Button to increase score -->
+
         <Button
             android:id="@+id/team2_button3"
             android:layout_width="57dp"
             android:layout_height="55dp"
+            android:onClick="onClick"
             android:text="-"
             android:textAlignment="center"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.502"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.479" />
+            app:layout_constraintVertical_bias="0.486" />
 
-        <!--Button to increase score -->
         <Button
             android:id="@+id/team2_button2"
             android:layout_width="57dp"
             android:layout_height="55dp"
             android:text="+"
+            android:onClick="onClick"
             android:textAlignment="center"
             android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -105,64 +107,39 @@
             app:layout_constraintVertical_bias="0.278" />
 
         <!--TextView of score -->
+
+
+        <!--Switch for team 1 -->
+
+        <!--Switch for team 2 -->
         <TextView
             android:id="@+id/textView"
             android:layout_width="123dp"
             android:layout_height="37dp"
-            android:layout_marginTop="400dp"
             android:background="#90CAF9"
             android:text="Score"
             android:textAlignment="center"
             android:textSize="16sp"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.486"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.576" />
 
-        <!-- Radio button for 1 point -->
-        <RadioButton
-            android:id="@+id/radioButton1"
-            android:layout_width="116dp"
-            android:layout_height="48dp"
-            android:layout_marginTop="16dp"
-            android:text="1 point"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-        <!--Radio button for 2 points -->
-        <RadioButton
-            android:id="@+id/radioButton2"
-            android:layout_width="116dp"
-            android:layout_height="48dp"
-            android:layout_marginTop="16dp"
-            android:text="2 points"
-            android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.498"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/radioButton1"
-            app:layout_constraintVertical_bias="0.168" />
-
-        <!--Switch for team 1 -->
         <Switch
             android:id="@+id/switch1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="220dp"
             android:minHeight="48dp"
             android:text="Team 1"
             android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.144"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/radioButton2"
-            app:layout_constraintVertical_bias="0.172" />
+            app:layout_constraintHorizontal_bias="0.131"
+            app:layout_constraintStart_toStartOf="parent" />
 
-        <!--Switch for team 2 -->
         <Switch
             android:id="@+id/switch2"
             android:layout_width="wrap_content"
@@ -192,6 +169,40 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.08" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1 point"
+            android:onClick="radioButtonChecked"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.77" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="84dp"
+            android:text="2 point"
+            android:onClick="radioButtonChecked"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+            app:layout_constraintVertical_bias="0.978" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
