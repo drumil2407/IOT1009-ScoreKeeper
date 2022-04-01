@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- add dark colors for the dark mode-->
+<resources>
+    <color name="color1">#3D3E39</color>
+    <color name="color2">#272829</color>
+    <color name="color3">#2B2E30</color>
+    <color name="textColor">#1C1919</color>
+</resources>
