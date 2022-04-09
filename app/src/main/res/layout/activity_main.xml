@@ -18,39 +18,76 @@
         <!-- Add some colors and text styles to buttons
         ,textview.edittext, radiobutton-->
 
+        <!--Team 1 textview -->
+
         <Button
             android:id="@+id/team2_button3"
+            style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="57dp"
             android:layout_height="55dp"
             android:onClick="onClick"
             android:text="-"
-            android:textColor="#00FF00"
             android:textAlignment="center"
+            android:textColor="#00FF00"
             android:textSize="20sp"
-            style="@style/Widget.AppCompat.Button.Colored"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.779"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.486" />
+            app:layout_constraintVertical_bias="0.485" />
+
+        <Button
+            android:id="@+id/team1_button3"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="57dp"
+            android:layout_height="55dp"
+            android:onClick="onClick"
+            android:text="-"
+            android:textAlignment="center"
+            android:textColor="#00FF00"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.248"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.485" />
 
         <Button
             android:id="@+id/team2_button2"
+            style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="57dp"
             android:layout_height="55dp"
-            android:text="+"
             android:onClick="onClick"
-            style="@style/Widget.AppCompat.Button.Colored"
+            android:text="+"
             android:textAlignment="center"
-            android:textSize="20sp"
             android:textColor="#00FF00"
+            android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.248"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.371" />
+            app:layout_constraintVertical_bias="0.387" />
 
-        <!--Team 1 textview -->
+        <Button
+            android:id="@+id/team1_button2"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="57dp"
+            android:layout_height="55dp"
+            android:onClick="onClick"
+            android:text="+"
+            android:textAlignment="center"
+            android:textColor="#00FF00"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.779"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.387" />
+
         <TextView
             android:id="@+id/team1Textview"
             android:layout_width="120dp"
@@ -189,20 +226,22 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            />
 
         <RadioButton
             android:id="@+id/radioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="1 point"
+
             android:textColor="#7E3517"
-            android:onClick="radioButtonChecked"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.77" />
+            app:layout_constraintVertical_bias="0.77"
+            />
 
         <RadioButton
             android:id="@+id/radioButton2"
@@ -211,7 +250,7 @@
             android:layout_marginBottom="84dp"
             android:textColor="#7D0552"
             android:text="2 point"
-            android:onClick="radioButtonChecked"
+
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
