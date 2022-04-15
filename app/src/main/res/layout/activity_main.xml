@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:contentDescription="@string/app_name"
+    android:contentDescription="@string/ScoreKeeper"
     android:orientation="horizontal"
     android:fillViewport="true">
 
@@ -26,7 +26,7 @@
             android:layout_width="57dp"
             android:layout_height="55dp"
             android:onClick="onClick"
-            android:text="-"
+            android:text="@string/minus"
             android:textAlignment="center"
             android:textColor="#00FF00"
             android:textSize="20sp"
@@ -43,7 +43,7 @@
             android:layout_width="57dp"
             android:layout_height="55dp"
             android:onClick="onClick"
-            android:text="-"
+            android:text="@string/minus"
             android:textAlignment="center"
             android:textColor="#00FF00"
             android:textSize="20sp"
@@ -60,7 +60,7 @@
             android:layout_width="57dp"
             android:layout_height="55dp"
             android:onClick="onClick"
-            android:text="+"
+            android:text="@string/plus"
             android:textAlignment="center"
             android:textColor="#00FF00"
             android:textSize="20sp"
@@ -77,7 +77,7 @@
             android:layout_width="57dp"
             android:layout_height="55dp"
             android:onClick="onClick"
-            android:text="+"
+            android:text="@string/plus"
             android:textAlignment="center"
             android:textColor="#00FF00"
             android:textSize="20sp"
@@ -94,7 +94,7 @@
             android:layout_height="33dp"
             android:layout_marginStart="36dp"
             android:layout_marginTop="108dp"
-            android:text="Team 1"
+            android:text="@string/team_1"
             android:textColor="#008080"
             android:textAlignment="center"
             android:textSize="20sp"
@@ -110,7 +110,7 @@
             android:layout_height="33dp"
             android:layout_marginTop="108dp"
             android:layout_marginEnd="56dp"
-            android:text="Team 2"
+            android:text="@string/team_2"
             android:textColor="#000080"
             android:textAlignment="center"
             android:textSize="20sp"
@@ -122,8 +122,7 @@
             android:id="@+id/team2_score"
             android:layout_width="53dp"
             android:layout_height="52dp"
-            android:text="0"
-
+            android:text="@string/_0"
             android:textAlignment="center"
             android:textSize="30sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -137,7 +136,7 @@
             android:id="@+id/team1_score"
             android:layout_width="56dp"
             android:layout_height="53dp"
-            android:text="0"
+            android:text="@string/_0"
             android:textAlignment="center"
             android:textSize="30sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -147,17 +146,11 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.278" />
 
-        <!--TextView of score -->
-
-
-        <!--Switch for team 1 -->
-
-        <!--Switch for team 2 -->
         <TextView
             android:id="@+id/textView"
             android:layout_width="123dp"
             android:layout_height="37dp"
-            android:text="Score"
+            android:text="@string/score"
             android:textStyle="bold"
             android:textColor="#FF00FF"
             android:textAlignment="center"
@@ -206,7 +199,7 @@
             android:layout_height="wrap_content"
             android:ems="6"
             android:inputType="textPersonName"
-            android:text="Cricket"
+            android:text="@string/cricket"
             android:textStyle="bold"
             android:textColor="#FF5733"
             android:textSize="20sp"
@@ -233,44 +226,55 @@
             android:id="@+id/radioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="1 point"
+            android:text="@string/_1_point"
 
             android:textColor="#7E3517"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.77"
-            />
+            app:layout_constraintVertical_bias="0.719" />
 
         <RadioButton
             android:id="@+id/radioButton2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="84dp"
+            android:text="@string/_2_point"
             android:textColor="#7D0552"
-            android:text="2 point"
 
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/radioGroup"
-            app:layout_constraintVertical_bias="0.978" />
+            app:layout_constraintVertical_bias="0.791" />
 
         <androidx.appcompat.widget.SwitchCompat
             android:id="@+id/switch3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
+            android:checked="false"
+            android:text="@string/text"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.507"
+            app:layout_constraintHorizontal_bias="0.491"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/radioButton2"
-            app:layout_constraintVertical_bias="0.794"
-            android:textStyle="bold"
-            android:text="@string/text"
-            android:checked="false"/>
+            app:layout_constraintVertical_bias="0.488" />
+
+        <Button
+            android:id="@+id/buttonS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save Scores"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.976" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

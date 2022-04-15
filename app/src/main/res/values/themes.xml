@@ -2,9 +2,9 @@
     <!-- Base application theme. -->
     <style name="Theme.ScoreKeeper" parent="Theme.AppCompat.DayNight.DarkActionBar">
 
-        <item name="colorPrimary">@color/design_default_color_on_primary</item>
+        <item name="colorPrimary">@color/textColor</item>
         <item name="colorPrimaryDark">@color/design_default_color_primary_dark</item>
-        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorPrimary">#E91E63</item>
 
 
     </style>
